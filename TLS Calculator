@@ -1,0 +1,75 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  	int n;
+ 	double result, a, b;
+ 	string z;
+ 	
+	do
+	{
+		cout << "operation lists: " << endl;
+		cout << "1. division " << endl;
+		cout << "2. addition " << endl;
+		cout << "3. subtraction " << endl;
+		cout << "4. multiplication\n " << endl;
+  		cout << "choose your operation with number (1, 2, 3, 4) : ";
+  		cin >> n; cout << "\n";
+
+  		if (n == 1)
+  		{
+  			cout << "you choose division" << endl;
+  			cout << "format : a/b" << endl;
+  			cout << "enter a : ";
+    		cin >> a;
+    		cout << "enter b : ";
+    		cin >> b;
+    		result = a/b;
+
+  	  		cout << "result = " << result << "\n" << endl;
+  		}
+  		else if (n == 2)
+  		{
+  			cout << "you choose addition" << endl;
+  		  	cout << "enter a : ";
+    		cin >> a;
+    		cout << "enter b : ";
+    		cin >> b;
+    		result = a + b;
+
+    		cout << "the result is = " << result << "\n" << endl;
+  		}
+  		else if (n == 3)
+  		{
+  			cout << "you choose subtraction" << endl;
+  			cout << "\na - b" << endl;
+    		cout << "enter number (a) : ";
+    		cin >> a;
+    		cout << "enter number (b) : ";
+    		cin >> b;
+    		result = a - b;
+
+    		cout << "the result is = " << result  << "\n" << endl;
+  		}
+  		else if (n == 4)
+  		{
+  			cout << "you choose multiplication" << endl;
+    		cout << "enter number : ";
+    		cin >> a;
+    		cout << "enter number : ";
+    		cin >> b;
+    		result = a * b;
+	
+	    	cout << "the result is = " << result << "\n" << endl;
+	  	}
+	  	else
+	  	{
+	  		cout << "operation not found. you might want to compute again\n" << endl;
+	 	}
+	  	
+		cout << "compute again? (yes / no) : ";
+		cin >> z; cout << "\n";
+	}
+	
+	while (z == "yes" || z == "ok" || z == "okay" || z == "iya" || z == "ya" || z == "oke");
+}
